@@ -48,8 +48,9 @@ Tested on M1 Macbook Air.
 - luajit: 16.84 ns /iter
 
 (Used environment)
-- LuaJIT: 2.1.1710088188
-- bun: 1.1.34
+
 - clang: 19.1.2
+- bun: 1.1.34
 - node: v22.9.0
 - node-gyp: v10.2.0
+- LuaJIT: 2.1.1710088188
