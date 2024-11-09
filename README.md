@@ -35,8 +35,16 @@ $ ./bench
 
 ```bash
 $ clang -shared -fPIC -O3 -o libmyRandom.dylib myRandom.c
-# .dylib should be .so on linux
+# (.dylib should be .so on linux)
 $ luajit bench.lua
+```
+
+### Python
+    
+```bash
+$ clang -shared -fPIC -O3 -o libmyRandom.dylib myRandom.c
+# (.dylib should be .so on linux)
+$ python bench.py
 ```
 
 ## Result
@@ -47,6 +55,7 @@ Tested on M1 Macbook Air.
 - bun: 12.54 ns /iter
 - node: 11.47 ns /iter
 - luajit: 16.84 ns /iter
+- python: 135.26 ns /iter
 
 (Used environment)
 
@@ -55,3 +64,4 @@ Tested on M1 Macbook Air.
 - node: v22.9.0
 - node-gyp: v10.2.0
 - LuaJIT: 2.1.1710088188
+- Python: 3.11.5
