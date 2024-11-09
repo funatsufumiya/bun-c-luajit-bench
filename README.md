@@ -1,6 +1,6 @@
 # bun-c-luajit-bench
 
-bun ffi benchmark (vs c, luajit)
+bun ffi benchmark (vs c, node, luajit)
 based on https://bun.sh/blog/compile-and-run-c-in-js
 
 ## Usage
