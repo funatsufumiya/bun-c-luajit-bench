@@ -12,6 +12,15 @@ $ bun install
 $ bun run bench.js
 ```
 
+### Node.js
+
+```bash
+$ yarn install
+$ yarn global add node-gyp
+$ node-gyp rebuild
+$ node bench_napi.cjs
+```
+
 ### C
 
 - note: using google benchmark library. below is example for macos.
@@ -35,6 +44,7 @@ Tested on M1 Macbook Air.
 
 - C: 7.05 ns /iter
 - bun: 12.54 ns /iter
+- node: 11.47 ns /iter
 - luajit: 16.84 ns /iter
 
 (LuaJIT 2.1.1710088188, bun 1.1.34, clang 19.1.2)
