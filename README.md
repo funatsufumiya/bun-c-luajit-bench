@@ -35,6 +35,7 @@ $ ./bench
 
 ```bash
 $ clang -shared -fPIC -O3 -o libmyRandom.dylib myRandom.c
+# .dylib should be .so on linux
 $ luajit bench.lua
 ```
 
